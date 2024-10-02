@@ -1,0 +1,26 @@
+name: Run R Script on Schedule
+
+on:
+  schedule:
+    # Menjalankan script setiap hari pada jam 00:00 UTC
+    - cron: '13 0 * * *'
+
+jobs:
+  run_r_script:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Langkah untuk checkout repository Anda
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Langkah untuk menginstall R
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.4.0'  # Anda bisa memilih versi R yang sesuai
+
+      # Langkah untuk menjalankan script R
+      - name: Run R script
+        run: |
+          Rscript update.R  # Sesuaikan dengan lokasi script Anda
