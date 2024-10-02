@@ -3,7 +3,7 @@ name: Run R Script on Schedule
 on:
   schedule:
     # Menjalankan script setiap hari pada jam 00:00 UTC
-    - cron: '25 03 * * *'
+    - cron: '25 3 * * *'
 
 jobs:
   run_r_script:
