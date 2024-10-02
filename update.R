@@ -1,3 +1,6 @@
+install.packages("jsonlite")
+install.packages("taskscheduleR")
+
 # Download data -----
 message(paste0("\n", Sys.Date()))
 tomorrow <- Sys.Date() + 1
