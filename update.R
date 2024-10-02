@@ -5,7 +5,8 @@ install.packages("taskscheduleR")
 message(paste0("\n", Sys.Date()))
 tomorrow <- Sys.Date() + 1
 st_date <- format(tomorrow, "%m/%d/%Y")
-path <- "D:/aephidayatuloh/project/R/adzan/"
+# path <- "D:/aephidayatuloh/project/R/adzan/"
+path <- ""
 # setwd(path)
 adzan <- "adzan.R"
 subuh <- "subuh.R"
